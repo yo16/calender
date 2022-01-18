@@ -1,0 +1,25 @@
+/*! calender_main.css */
+body {
+    background-color: #fafad2;
+}
+
+.calender_frame {
+    background-color: #fff;
+}
+
+.month_name {
+    background-color: #eee;
+}
+
+.yobi {
+    width: 50px;
+}
+.yobi_0 {
+    background-color: #f4b3c2;
+}
+.yobi_6 {
+    background-color: #a0d8ef;
+}
+.yobi_1, .yobi_2, .yobi_3, .yobi_4, .yobi_5 {
+    background-color: #fff;
+}
