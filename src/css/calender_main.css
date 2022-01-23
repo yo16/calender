@@ -1,18 +1,24 @@
 /*! calender_main.css */
 body {
     background-color: #fafad2;
+    text : #222;
 }
 
+/* カレンダー */
 .calender_frame {
     background-color: #fff;
 }
 
+/* 月 */
 .month_name {
-    background-color: #eee;
+    background-color: #ddd;
 }
 
+/* 曜日 */
 .yobi {
     width: 50px;
+    text-align: center;
+    background-color: #ccc;
 }
 .yobi_0 {
     background-color: #f4b3c2;
@@ -21,5 +27,54 @@ body {
     background-color: #a0d8ef;
 }
 .yobi_1, .yobi_2, .yobi_3, .yobi_4, .yobi_5 {
+    background-color: #eea;
+}
+
+/* 日 */
+.day{
+    text-align: center;
+}
+.another_month_day {
+    color: #c3c3c3;
+}
+.day_yobi_6 {
+    background-color: #def0f7;
+}
+.day_yobi_1, .day_yobi_2, .day_yobi_3, .day_yobi_4, .day_yobi_5 {
     background-color: #fff;
+}
+.day_yobi_0, .day_holiday {
+    background-color: #f7e1e6;
+}
+
+/* 今日 */
+.today{
+    background-color: #cc3;
+}
+
+/* 祝日 */
+.day_holiday{
+    position: relative;
+}
+.day_holiday:hover .holiday_comment{
+    display: inline;
+}
+.holiday_comment{
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.8);
+    width: 100px;
+    left: 20%;
+    top: 100%;
+    margin-top: 12px;
+    font-size: 80%;
+}
+.holiday_comment:after{
+    border-bottom: 10px solid rgba(255, 0, 0, 0.8);  /* 吹き出し口の高さ・色 */
+    border-left: 5px solid transparent;   /* 吹き出し口の幅１/２ */
+    border-right: 5px solid transparent;  /* 吹き出し口の幅１/２ */
+    top: -10px;                            /* 吹き出し口の位置調整 */
+    left : 5%;                         /* 吹き出し口の横位置 */
+    content: "";                       /* コンテンツの挿入 */
+    position: absolute;                /* 親要素を基準 */
 }
